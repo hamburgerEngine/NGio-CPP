@@ -13,6 +13,7 @@
 
 # Planned Features
 
+- [x] Medals
 - [ ] Highscores
 
 uhh thats all
