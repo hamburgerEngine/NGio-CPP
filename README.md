@@ -18,6 +18,24 @@
 
 uhh thats all
 
+# Dependencies
+
+### Windows (They're already included)
+
+* libcurl/curl
+* nlohmann/json
+
+### MacOS
+
+* COMING SOON
+
+### Linux
+
+* COMING SOON
+
+# Documentation
+
+* COMING SOON
 
 # CREDITS
 
