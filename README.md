@@ -22,8 +22,8 @@ uhh thats all
 
 ### Windows (They're already included)
 
-* libcurl/curl
-* nlohmann/json
+* [libcurl/curl](https://curl.se/download.html) (USE VCPKG)
+* [nlohmann/json](https://github.com/nlohmann/json)
 
 ### MacOS
 
