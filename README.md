@@ -2,7 +2,7 @@
 
 * A C++ library for the Newgrounds API.
 
-* This is a heavy work in progress.
+* This is a work in progress.
 
 # Current Features
 
