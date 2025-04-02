@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\io">
+      <UniqueIdentifier>{5db177e4-91c4-4266-bfd6-aecf51ea623c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\io\newgrounds">
+      <UniqueIdentifier>{567d4f3a-ad0b-4f5c-90bd-49e455be0f77}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\io\newgrounds\crypto">
+      <UniqueIdentifier>{e83b9c62-7feb-464e-bee5-8d46d6170fc0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\io\newgrounds\core">
+      <UniqueIdentifier>{a75ec39d-8d15-4025-95b2-8169c0682c20}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\io\newgrounds\NG.cpp">
+      <Filter>Source Files\io\newgrounds</Filter>
+    </ClCompile>
+    <ClCompile Include="src\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\io\newgrounds\crypto\Encoding.cpp">
+      <Filter>Source Files\io\newgrounds\crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\io\newgrounds\crypto\RC4.cpp">
+      <Filter>Source Files\io\newgrounds\crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\io\newgrounds\crypto\Cipher.cpp">
+      <Filter>Source Files\io\newgrounds\crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\io\newgrounds\crypto\AES.cpp">
+      <Filter>Source Files\io\newgrounds\crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\io\newgrounds\core\Medal.cpp">
+      <Filter>Source Files\io\newgrounds\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\io\newgrounds\core\MedalList.cpp">
+      <Filter>Source Files\io\newgrounds\core</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
