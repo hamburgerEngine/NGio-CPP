@@ -9,10 +9,10 @@
 * Logging in
 * Getting the player's username
 * Encryption
+* Medal unlocking
 
 # Planned Features
 
-- [ ] Medals
 - [ ] Highscores
 
 uhh thats all
