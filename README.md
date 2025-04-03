@@ -31,8 +31,9 @@ uhh thats all
 
 ### Linux
 
-* COMING SOON
-
+```
+sudo apt install nlohmann-json3-dev libcurl4-openssl-dev
+```
 # Documentation
 
 * COMING SOON

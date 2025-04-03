@@ -31,3 +31,4 @@ Release/PhloxEngine.vcxproj.FileListAbsolute.txt
 /hamburger-engine/Debug/microsoft
 /VisualCProject/.vs
 /examples/VisualCProject/.vs
+examples/Makefile/build
