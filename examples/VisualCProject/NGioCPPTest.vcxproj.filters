@@ -27,29 +27,29 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\src\io\newgrounds\NG.cpp">
-      <Filter>Source Files\io\newgrounds</Filter>
-    </ClCompile>
     <ClCompile Include="src\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\src\io\newgrounds\crypto\Encoding.cpp">
-      <Filter>Source Files\io\newgrounds\crypto</Filter>
-    </ClCompile>
-    <ClCompile Include="..\src\io\newgrounds\crypto\RC4.cpp">
-      <Filter>Source Files\io\newgrounds\crypto</Filter>
-    </ClCompile>
-    <ClCompile Include="..\src\io\newgrounds\crypto\Cipher.cpp">
-      <Filter>Source Files\io\newgrounds\crypto</Filter>
-    </ClCompile>
-    <ClCompile Include="..\src\io\newgrounds\crypto\AES.cpp">
-      <Filter>Source Files\io\newgrounds\crypto</Filter>
-    </ClCompile>
-    <ClCompile Include="..\src\io\newgrounds\core\Medal.cpp">
+    <ClCompile Include="..\..\src\io\newgrounds\core\Medal.cpp">
       <Filter>Source Files\io\newgrounds\core</Filter>
     </ClCompile>
-    <ClCompile Include="..\src\io\newgrounds\core\MedalList.cpp">
+    <ClCompile Include="..\..\src\io\newgrounds\core\MedalList.cpp">
       <Filter>Source Files\io\newgrounds\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\io\newgrounds\crypto\AES.cpp">
+      <Filter>Source Files\io\newgrounds\crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\io\newgrounds\crypto\Cipher.cpp">
+      <Filter>Source Files\io\newgrounds\crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\io\newgrounds\crypto\Encoding.cpp">
+      <Filter>Source Files\io\newgrounds\crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\io\newgrounds\crypto\RC4.cpp">
+      <Filter>Source Files\io\newgrounds\crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\io\newgrounds\NG.cpp">
+      <Filter>Source Files\io\newgrounds</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
