@@ -3,7 +3,6 @@
 #include <vector>
 #include <memory>
 #include "io/newgrounds/NG.hpp"
-#include "io/newgrounds/crypto/AES.hpp"
 
 namespace io {
 namespace newgrounds {
@@ -28,14 +27,6 @@ private:
     
     std::vector<uint8_t> S;
     int i = 0, j = 0;
-};
-
-class AES128 : public ICipher {
-public:
-    AES128(const std::vector<uint8_t>& key);
-    std::vector<uint8_t> encrypt(const std::vector<uint8_t>& data) override;
-private:
-    AESImpl impl;
 };
 
 std::unique_ptr<ICipher> createCipher(CipherType type, const std::vector<uint8_t>& key);

@@ -14,9 +14,13 @@
 # Planned Features
 
 - [x] Medals
-- [ ] Highscores
+- [x] Highscores
 
 uhh thats all
+
+# Notes
+
+* No aes128 encryption, im lazy and i dont wanna fix it so i deleted it (just use rc4)
 
 # Dependencies
 
