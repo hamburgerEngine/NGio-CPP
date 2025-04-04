@@ -42,4 +42,5 @@ sudo apt install nlohmann-json3-dev libcurl4-openssl-dev
 
 * [maybekoi(me!)](https://github.com/maybekoi) - C++ Library
 * [Newgrounds](https://newgrounds.com) - API
+* [Geokureli/Newgrounds](https://github.com/Geokureli/Newgrounds) - HEAVILY referenced this for the cpp ver
 

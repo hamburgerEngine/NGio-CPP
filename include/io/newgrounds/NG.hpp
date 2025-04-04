@@ -9,6 +9,9 @@
 #include <nlohmann/json.hpp>
 #include <iostream>
 #include "io/newgrounds/core/MedalList.hpp"
+#include "io/newgrounds/core/ScoreBoardComponent.hpp"
+#include "io/newgrounds/NGLite.hpp"
+#include "io/newgrounds/core/ComponentList.hpp"
 
 namespace io {
 namespace newgrounds {
@@ -43,7 +46,7 @@ enum class EncryptionFormat {
     HEX
 };
 
-class NG {
+class NG : public NGLite {
 public:
     static void create(const std::string& app_id, const std::string& session_id = "");
     static NG* core;
@@ -62,6 +65,12 @@ public:
 
     void unlockMedal(int id);
 
+    void queueCall(const std::string& component, 
+                  const nlohmann::json& parameters,
+                  std::function<void(const nlohmann::json&)> callback) override;
+
+    void requestScoreBoards(std::function<void(bool success, const std::vector<ScoreBoard>& boards)> callback);
+
 private:
     static size_t WriteCallback(void* contents, size_t size, size_t nmemb, std::string* userp);
     void checkSession(const std::string& session_id, std::function<void(LoginState)> callback);
@@ -76,6 +85,7 @@ private:
     std::unique_ptr<User> user;
     CURL* curl;
     std::function<std::string(const std::string&)> encryption_handler;
+    std::unique_ptr<ComponentList> calls_;
 };
 
 }} // namespace io::newgrounds

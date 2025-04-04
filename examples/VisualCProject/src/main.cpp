@@ -36,6 +36,61 @@ int main() {
     
     std::this_thread::sleep_for(std::chrono::milliseconds(100));
 
+    // gits scorenords
+    bool scoreboards_complete = false;
+    io::newgrounds::NG::core->requestScoreBoards(
+        [&scoreboards_complete](bool success, const std::vector<io::newgrounds::ScoreBoard>& boards) {
+            if (success) {
+                std::cout << "Found " << boards.size() << " scoreboards:" << std::endl;
+                for (const auto& board : boards) {
+                    std::cout << "- " << board.getName() << " (ID: " << board.getId() << ")" << std::endl;
+                }
+                scoreboards_complete = true;
+            } else {
+                std::cout << "Failed to get scoreboards!" << std::endl;
+                scoreboards_complete = true;
+            }
+        }
+    );
+
+    while (!scoreboards_complete) {
+        std::this_thread::sleep_for(std::chrono::milliseconds(100));
+    }
+
+    // post score to highscore id: 14743 (replace wit ur id lel)
+    bool score_post_complete = false;
+    io::newgrounds::NG::core->getCalls().scoreBoard.postScore(14743, 9001, "example_tag",
+        [&score_post_complete](bool success) {
+            if (success) {
+                std::cout << "Score posted successfully!" << std::endl;
+            } else {
+                std::cout << "Failed to post score!" << std::endl;
+            }
+            score_post_complete = true;
+        }
+    );
+
+    while (!score_post_complete) {
+        std::this_thread::sleep_for(std::chrono::milliseconds(100));
+    }
+
+    // git scores from scorbor id: 14743 (replace wit ur id lel)
+    bool scores_complete = false;
+    io::newgrounds::NG::core->getCalls().scoreBoard.getScores(14743, 10, 0, io::newgrounds::Period::ALL, false, "", "",
+        [&scores_complete](bool success) {
+            if (success) {
+                std::cout << "Scores retrieved successfully!" << std::endl;
+            } else {
+                std::cout << "Failed to get scores!" << std::endl;
+            }
+            scores_complete = true;
+        }
+    );
+
+    while (!scores_complete) {
+        std::this_thread::sleep_for(std::chrono::milliseconds(100));
+    }
+
     bool medal_complete = false;
     io::newgrounds::NG::core->medals.loadList([&medal_complete](bool success) {
         if (success) {

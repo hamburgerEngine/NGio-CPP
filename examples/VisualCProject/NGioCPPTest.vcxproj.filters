@@ -51,5 +51,17 @@
     <ClCompile Include="..\..\src\io\newgrounds\NG.cpp">
       <Filter>Source Files\io\newgrounds</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\src\io\newgrounds\core\Score.cpp">
+      <Filter>Source Files\io\newgrounds\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\io\newgrounds\core\ScoreBoard.cpp">
+      <Filter>Source Files\io\newgrounds\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\io\newgrounds\core\ScoreBoardComponent.cpp">
+      <Filter>Source Files\io\newgrounds\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\io\newgrounds\NGLite.cpp">
+      <Filter>Source Files\io\newgrounds\core</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

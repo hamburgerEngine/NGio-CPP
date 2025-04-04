@@ -21,6 +21,9 @@ NG::NG(const std::string& app_id, const std::string& session_id)
         throw std::runtime_error("Failed to initialize CURL");
     }
 
+    calls_ = std::make_unique<ComponentList>(this);
+    setCalls(calls_.get());
+
     if (!session_id.empty()) {
         checkSession(session_id, nullptr);
     }
@@ -315,6 +318,27 @@ void NG::unlockMedal(int id) {
     } catch (const std::exception& e) {
         std::cout << "Error unlocking medal " << id << ": " << e.what() << std::endl;
     }
+}
+
+void NG::queueCall(const std::string& component, 
+                   const nlohmann::json& parameters,
+                   std::function<void(const nlohmann::json&)> callback) {
+    nlohmann::json response;
+    if (sendRequest(component, parameters, response)) {
+        if (callback) {
+            if (response.contains("result")) {
+                callback(response["result"]);
+            } else {
+                callback(response);
+            }
+        }
+    } else if (callback) {
+        callback(nlohmann::json::object());
+    }
+}
+
+void NG::requestScoreBoards(std::function<void(bool success, const std::vector<ScoreBoard>& boards)> callback) {
+    calls_->scoreBoard.getBoards(callback);
 }
 
 }} // namespace io::newgrounds 
