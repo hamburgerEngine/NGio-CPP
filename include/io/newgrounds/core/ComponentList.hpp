@@ -4,6 +4,7 @@
 
 namespace io {
 namespace newgrounds {
+namespace core {
 
 class NGLite;
 
@@ -14,4 +15,4 @@ public:
     ScoreBoardComponent scoreBoard;
 };
 
-}} // namespace io::newgrounds 
+}}} // namespace io::newgrounds::core 

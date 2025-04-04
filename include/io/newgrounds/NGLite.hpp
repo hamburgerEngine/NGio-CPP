@@ -6,6 +6,7 @@
 
 namespace io {
 namespace newgrounds {
+namespace core {
 
 class ComponentList;
 
@@ -23,5 +24,9 @@ public:
 protected:
     ComponentList* calls_{nullptr};
 };
+
+}
+
+using NGLite = core::NGLite;
 
 }} // namespace io::newgrounds 

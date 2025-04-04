@@ -12,9 +12,14 @@
 #include "io/newgrounds/core/ScoreBoardComponent.hpp"
 #include "io/newgrounds/NGLite.hpp"
 #include "io/newgrounds/core/ComponentList.hpp"
+#include "io/newgrounds/core/ScoreBoard.hpp"
 
 namespace io {
 namespace newgrounds {
+
+using ScoreBoard = core::ScoreBoard;
+using ComponentList = core::ComponentList;
+using Period = core::Period;
 
 struct User {
     int id;
@@ -46,7 +51,7 @@ enum class EncryptionFormat {
     HEX
 };
 
-class NG : public NGLite {
+class NG : public core::NGLite {
 public:
     static void create(const std::string& app_id, const std::string& session_id = "");
     static NG* core;
@@ -85,7 +90,7 @@ private:
     std::unique_ptr<User> user;
     CURL* curl;
     std::function<std::string(const std::string&)> encryption_handler;
-    std::unique_ptr<ComponentList> calls_;
+    std::unique_ptr<core::ComponentList> calls_;
 };
 
 }} // namespace io::newgrounds
