@@ -10,6 +10,7 @@
 * Getting the player's username
 * Encryption
 * Medal unlocking
+* Highscore saving/updating
 
 # Planned Features
 
