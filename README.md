@@ -2,8 +2,6 @@
 
 * A C++ library for the Newgrounds API.
 
-* This is a work in progress.
-
 # Current Features
 
 * Logging in
