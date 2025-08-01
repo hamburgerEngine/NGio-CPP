@@ -160,6 +160,7 @@
     <ClCompile Include="..\..\src\io\newgrounds\core\Score.cpp" />
     <ClCompile Include="..\..\src\io\newgrounds\core\ScoreBoard.cpp" />
     <ClCompile Include="..\..\src\io\newgrounds\core\ScoreBoardComponent.cpp" />
+    <ClCompile Include="..\..\src\io\newgrounds\crypto\AES128.cpp" />
     <ClCompile Include="..\..\src\io\newgrounds\crypto\Cipher.cpp" />
     <ClCompile Include="..\..\src\io\newgrounds\crypto\Encoding.cpp" />
     <ClCompile Include="..\..\src\io\newgrounds\crypto\RC4.cpp" />

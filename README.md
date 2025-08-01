@@ -4,6 +4,7 @@
 
 # Current Features
 
+* AES128 and RC4 Encryption
 * Logging in
 * Getting the player's username
 * Encryption
@@ -16,10 +17,6 @@
 - [x] Highscores
 
 uhh thats all
-
-# Notes
-
-* No aes128 encryption, im lazy and i dont wanna fix it so i deleted it (just use rc4)
 
 # Dependencies
 
@@ -46,4 +43,4 @@ sudo apt install nlohmann-json3-dev libcurl4-openssl-dev
 * [maybekoi(me!)](https://github.com/maybekoi) - C++ Library
 * [Newgrounds](https://newgrounds.com) - API
 * [Geokureli/Newgrounds](https://github.com/Geokureli/Newgrounds) - HEAVILY referenced this for the cpp ver
-
+* [kokke/tiny-aes-c](https://github.com/kokke/tiny-AES-c) - Referenced it for AES128 support

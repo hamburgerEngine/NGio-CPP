@@ -36,9 +36,6 @@
     <ClCompile Include="..\..\src\io\newgrounds\core\MedalList.cpp">
       <Filter>Source Files\io\newgrounds\core</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\src\io\newgrounds\crypto\AES.cpp">
-      <Filter>Source Files\io\newgrounds\crypto</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\src\io\newgrounds\crypto\Cipher.cpp">
       <Filter>Source Files\io\newgrounds\crypto</Filter>
     </ClCompile>
@@ -62,6 +59,9 @@
     </ClCompile>
     <ClCompile Include="..\..\src\io\newgrounds\NGLite.cpp">
       <Filter>Source Files\io\newgrounds\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\io\newgrounds\crypto\AES128.cpp">
+      <Filter>Source Files\io\newgrounds\crypto</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

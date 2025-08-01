@@ -30,8 +30,8 @@ int main() {
         }
     }
 
-    io::newgrounds::NG::core->setupEncryption("CtZ3tHRcA9kTtf9W9xk6aA==", // replace with ur key lol
-                                            io::newgrounds::CipherType::RC4,
+    io::newgrounds::NG::core->setupEncryption("b2OXmviYngsv0Da1dZ+TVg==", // replace with ur key lol
+                                            io::newgrounds::CipherType::AES_128,
                                             io::newgrounds::EncryptionFormat::BASE_64);
     
     std::this_thread::sleep_for(std::chrono::milliseconds(100));

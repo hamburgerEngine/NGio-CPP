@@ -29,6 +29,20 @@ private:
     int i = 0, j = 0;
 };
 
+class AES128 : public ICipher {
+public:
+    AES128(const std::vector<uint8_t>& key);
+    std::vector<uint8_t> encrypt(const std::vector<uint8_t>& data) override;
+
+private:
+    std::vector<uint8_t> key;
+    std::vector<uint8_t> generateIV();
+    std::vector<uint8_t> padData(const std::vector<uint8_t>& data);
+    std::vector<uint8_t> unpadData(const std::vector<uint8_t>& data);
+    std::vector<uint8_t> generateRoundKeys();
+    std::vector<uint8_t> cbcEncrypt(const std::vector<uint8_t>& data, const std::vector<uint8_t>& iv, const std::vector<uint8_t>& roundKeys);
+};
+
 std::unique_ptr<ICipher> createCipher(CipherType type, const std::vector<uint8_t>& key);
 
 }}} // namespace io::newgrounds::crypto 
